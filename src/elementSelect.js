@@ -17,3 +17,9 @@ export function landingInput() {
     const landingInput = document.querySelector("#landingInput");
     return landingInput;
 }
+
+// Displays main page when called
+export function mainPageShow() {
+    const mainPage = document.querySelector("#mainPage");
+    mainPage.style.display = "grid";
+}
