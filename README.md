@@ -22,3 +22,6 @@ A simple weather web application using the Visual Crossing API.
 
 - Webpack Dev Server (Optional for Development):
 ```npm install --save-dev webpack-dev-server```
+
+- Chart.js (for Chart Development):
+```npm install chart.js```
