@@ -3,6 +3,7 @@ import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
     wind, currentDayIcon
  } from "./elementSelect";
+import { getTempData } from "./graph";
 
 
 // Calls Visual Crossing API
@@ -37,7 +38,13 @@ function getWeather(location) {
             humidity(response.days[0].humidity);
             // Display wind
             wind(response.days[0].windspeed);
-            // Display graph
+
+            // Assigns temperature data into array to feed to graphs
+            const firstDay = response.days[0];
+            const hourlyTemps = firstDay.hours.map(hour => hour.temp);
+
+            // Feeds data into graph
+            getTempData(hourlyTemps);
 
             // Display days
 
