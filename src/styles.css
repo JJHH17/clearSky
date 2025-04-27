@@ -88,13 +88,17 @@
 #icon {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    text-align: end;
+    display: block;
+    margin-left: auto;
+    height: 40px;
+    width: auto;
 }
 
 #temp {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-size: xx-large;
+    margin-left: 10px;
 }
 
 #Desc {
