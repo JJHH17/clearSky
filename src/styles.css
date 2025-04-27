@@ -75,14 +75,14 @@
 #weatherDetails {
     display: grid;
     grid-template-columns: 50% 50% ;
-    grid-template-rows: 20% 40% auto auto auto;
+    grid-template-rows: 30% 40% auto auto auto;
 }
 
 #location {
     grid-column: 1 / 3;
     grid-row: 1 / 1;
     text-align: center;
-    font-size: x-large;
+    font-size: medium;
 }
 
 #icon {
@@ -107,9 +107,11 @@
     grid-column: 1 / 3 ;
     grid-row: 4 / 5;
     text-align: center;
+    font-size: small;
 }
 
 #Humidity, #Wind {
     text-align: center;
+    font-size: small;
 }
 

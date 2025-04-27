@@ -1,5 +1,8 @@
 import "./styles.css";
-import { landingButton, landingInput } from "./elementSelect";
+import { landingButton, landingInput, landingFormHide, mainPageShow,
+    displayLocation, displayTemp, displayDesc, tempFeel, humidity,
+    wind
+ } from "./elementSelect";
 
 
 // Calls Visual Crossing API
@@ -15,6 +18,30 @@ function getWeather(location) {
 
         .then(function(response) {
             console.log(response);
+
+            // Hides initial page
+            landingFormHide();
+            // Display main page 
+            mainPageShow();
+            // Display location
+            displayLocation(response.resolvedAddress);
+            // Display icon
+
+            // Display temperature
+            displayTemp(response.days[0].temp);
+            // Display description
+            displayDesc(response.days[0].conditions);
+            // Display temp feel
+            tempFeel(response.days[0].feelslike);
+            // Display humidity
+            humidity(response.days[0].humidity);
+            // Display wind
+            wind(response.days[0].windspeed);
+            // Display graph
+
+            // Display days
+
+            // Display hours (on day 0/current day)
         })
 
         // Handle errors
