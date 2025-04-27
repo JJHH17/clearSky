@@ -1,7 +1,7 @@
 import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
-    wind
+    wind, currentDayIcon
  } from "./elementSelect";
 
 
@@ -26,7 +26,7 @@ function getWeather(location) {
             // Display location
             displayLocation(response.resolvedAddress);
             // Display icon
-
+            currentDayIcon(response.days[0].icon)
             // Display temperature
             displayTemp(response.days[0].temp);
             // Display description

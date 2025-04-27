@@ -1,5 +1,8 @@
 // File responsible for selecting elements on the DOM
 
+// Importing icons
+const icons = require.context("./assets");
+
 // Hides landing form
 export function landingFormHide() {
     const landingForm = document.querySelector("#landingForm");
@@ -58,4 +61,10 @@ export function humidity(humidity) {
 export function wind(wind) {
     const windDiv = document.querySelector("#Wind");
     windDiv.innerText = "Wind: " + wind + "mph";
+}
+
+// Used to display weather icons 
+export function currentDayIcon(todaysIcon) {
+    const icon = document.querySelector("#icon");
+    icon.src = icons(`./${todaysIcon}.png`);
 }
