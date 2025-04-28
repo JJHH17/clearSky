@@ -65,6 +65,16 @@
 #tempGraph {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tempGraph canvas {
+    width: 100%;
+    height: 100%;
 }
 
 #hourlyForecast {
@@ -75,7 +85,7 @@
 #weatherDetails {
     display: grid;
     grid-template-columns: 50% 50% ;
-    grid-template-rows: 30% 40% auto auto auto;
+    grid-template-rows: 30% 30% auto auto auto;
 }
 
 #location {

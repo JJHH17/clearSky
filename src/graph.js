@@ -12,7 +12,7 @@ let dayTempChart = new Chart(tempChart, {
             '19:00', '20:00', '21:00', '22:00', '23:00',
         ],
         datasets: [{
-            label: 'Temperature',
+            label: 'Temperature (°C)',
             data: [],
             fill: true,
             borderColor: 'rgb(5, 24, 24)',
