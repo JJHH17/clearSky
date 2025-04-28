@@ -1,7 +1,7 @@
 import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
-    wind, currentDayIcon
+    wind, currentDayIcon, days
  } from "./elementSelect";
 import { getTempData } from "./graph";
 
@@ -47,6 +47,10 @@ function getWeather(location) {
             getTempData(hourlyTemps);
 
             // Display days
+            days.forEach((func, index) => {
+                const day = response.days[index + 1];
+                func(day.datetime, day.temp, day.icon);
+            });
 
             // Display hours (on day 0/current day)
         })

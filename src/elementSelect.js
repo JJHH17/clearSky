@@ -77,7 +77,7 @@ function day1(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // List of days 
@@ -88,7 +88,7 @@ function day2(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // List of days 
@@ -99,7 +99,7 @@ function day3(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // List of days 
@@ -110,7 +110,7 @@ function day4(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // List of days 
@@ -121,7 +121,7 @@ function day5(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // List of days 
@@ -132,7 +132,7 @@ function day6(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // List of days 
@@ -143,7 +143,7 @@ function day7(date, temp, icon) {
 
     day.innerText = date;
     temperature.innerText = temp;
-    image.src = icons(`${icon}.png`);
+    image.src = icons(`./${icon}.png`);
 }
 
 // Create an array of days
