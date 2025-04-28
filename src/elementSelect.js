@@ -68,3 +68,83 @@ export function currentDayIcon(todaysIcon) {
     const icon = document.querySelector("#icon");
     icon.src = icons(`./${todaysIcon}.png`);
 }
+
+// List of days 
+function day1(date, temp, icon) {
+    const day = document.querySelector("#day1Date");
+    const temperature = document.querySelector("#day1Temp");
+    const image = document.querySelector("#day1Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// List of days 
+function day2(date, temp, icon) {
+    const day = document.querySelector("#day2Date");
+    const temperature = document.querySelector("#day2Temp");
+    const image = document.querySelector("#day2Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// List of days 
+function day3(date, temp, icon) {
+    const day = document.querySelector("#day3Date");
+    const temperature = document.querySelector("#day3Temp");
+    const image = document.querySelector("#day3Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// List of days 
+function day4(date, temp, icon) {
+    const day = document.querySelector("#day4Date");
+    const temperature = document.querySelector("#day4Temp");
+    const image = document.querySelector("#day4Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// List of days 
+function day5(date, temp, icon) {
+    const day = document.querySelector("#day5Date");
+    const temperature = document.querySelector("#day5Temp");
+    const image = document.querySelector("#day5Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// List of days 
+function day6(date, temp, icon) {
+    const day = document.querySelector("#day6Date");
+    const temperature = document.querySelector("#day6Temp");
+    const image = document.querySelector("#day6Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// List of days 
+function day7(date, temp, icon) {
+    const day = document.querySelector("#day7Date");
+    const temperature = document.querySelector("#day7Temp");
+    const image = document.querySelector("#day7Icon");
+
+    day.innerText = date;
+    temperature.innerText = temp;
+    image.src = icons(`${icon}.png`);
+}
+
+// Create an array of days
+export const days = [day1, day2, day3, day4, day5, day6, day7];
