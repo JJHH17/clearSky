@@ -75,8 +75,8 @@ function day1(date, temp, icon) {
     const temperature = document.querySelector("#day1Temp");
     const image = document.querySelector("#day1Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
@@ -86,8 +86,8 @@ function day2(date, temp, icon) {
     const temperature = document.querySelector("#day2Temp");
     const image = document.querySelector("#day2Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
@@ -97,8 +97,8 @@ function day3(date, temp, icon) {
     const temperature = document.querySelector("#day3Temp");
     const image = document.querySelector("#day3Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
@@ -108,8 +108,8 @@ function day4(date, temp, icon) {
     const temperature = document.querySelector("#day4Temp");
     const image = document.querySelector("#day4Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
@@ -119,8 +119,8 @@ function day5(date, temp, icon) {
     const temperature = document.querySelector("#day5Temp");
     const image = document.querySelector("#day5Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
@@ -130,8 +130,8 @@ function day6(date, temp, icon) {
     const temperature = document.querySelector("#day6Temp");
     const image = document.querySelector("#day6Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
@@ -141,8 +141,8 @@ function day7(date, temp, icon) {
     const temperature = document.querySelector("#day7Temp");
     const image = document.querySelector("#day7Icon");
 
-    day.innerText = date;
-    temperature.innerText = temp;
+    day.innerText = "Date: " + date;
+    temperature.innerText = temp + "°C";
     image.src = icons(`./${icon}.png`);
 }
 
