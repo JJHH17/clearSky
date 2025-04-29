@@ -53,7 +53,10 @@ function getWeather(location) {
             });
 
             // Display hours (on day 0/current day)
-            
+            hours.forEach((func, index) => {
+                const hour = response.days[0].hours[index + 1];
+                func(hour.temp, hour.conditions, hour.icon);
+            });
         })
 
         // Handle errors
