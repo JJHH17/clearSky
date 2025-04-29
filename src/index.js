@@ -1,7 +1,7 @@
 import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
-    wind, currentDayIcon, days
+    wind, currentDayIcon, days, hours
  } from "./elementSelect";
 import { getTempData } from "./graph";
 
@@ -53,6 +53,7 @@ function getWeather(location) {
             });
 
             // Display hours (on day 0/current day)
+            
         })
 
         // Handle errors
