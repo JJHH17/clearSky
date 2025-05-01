@@ -380,16 +380,6 @@ function hour23(hour, temp, icon) {
     hourIcon.src = icons(`./${icon}.png`);
 }
 
-function hour24(hour, temp, icon) {
-    const time = document.querySelector("#Hour24");
-    const temperature = document.querySelector("#condition24");
-    const hourIcon = document.querySelector("#img24");
-
-    time.innerText = hour;
-    temperature.innerText = temp;
-    hourIcon.src = icons(`./${icon}.png`);
-}
-
 // Create an array of hours
 export const hours = [hour1, hour2, hour3, hour4, hour5, hour6, hour7, hour8, hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, 
     hour17, hour18, hour19, hour20, hour21, hour22, hour23];
