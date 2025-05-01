@@ -152,3 +152,12 @@
     font-size: small;
 }
 
+#searchGroup {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#searchLocation {
+    margin-right: 5px;
+}
