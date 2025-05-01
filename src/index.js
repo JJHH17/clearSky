@@ -1,7 +1,8 @@
 import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
-    wind, currentDayIcon, days, hours
+    wind, currentDayIcon, days, hours, searchDisplay, searchBar,
+    searchBtn
  } from "./elementSelect";
 import { getTempData } from "./graph";
 
@@ -57,6 +58,9 @@ function getWeather(location) {
                 const hour = response.days[0].hours[index + 1];
                 func(hour.temp, hour.conditions, hour.icon);
             });
+
+            // Displays search elements
+            searchDisplay();
         })
 
         // Handle errors
@@ -70,5 +74,11 @@ function getWeather(location) {
 // API called when button clicked
 landingButton().addEventListener("click", () => {
     const search = landingInput(); // Used to get data from user
+    getWeather(search.value);
+})
+
+// Main page search button (after above function is completed)
+searchBtn().addEventListener("click", () => {
+    const search = searchBar();
     getWeather(search.value);
 })
