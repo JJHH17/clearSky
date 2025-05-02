@@ -70,7 +70,6 @@ function getWeather(location) {
         })
 }
 
-
 // API called when button clicked
 landingButton().addEventListener("click", () => {
     const search = landingInput(); // Used to get data from user
