@@ -3,6 +3,12 @@
     background-color: #ffda57;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
 #header {
     background-color: black;
     color: white;
@@ -43,6 +49,8 @@
     display: none;
     grid-template-columns: 20% auto 20%;
     grid-template-rows: 50% 50%;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 #dayHolder {
@@ -94,6 +102,9 @@
 #hourlyForecast {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
+    overflow-y: auto;
+    height: 100%;
+    text-align: center;
 }
 
 #weatherDetails {
@@ -104,6 +115,16 @@
     margin: 10px;
     color: white;
     border-radius: 25px;
+}
+
+.hourBlock {
+    background-color: white;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.hourBlock > div {
+    background: transparent;
 }
 
 #weatherDetails > div, img {
