@@ -79,6 +79,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 15px;
     color: white;
+    margin: 10px;
 }
 
 #dayForecast, #hourForecast {
@@ -102,6 +103,7 @@ html, body {
 
 #dayHolder img {
     width: 25%;
+    height: 25%;
     margin-bottom: 5px;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -165,10 +167,26 @@ html, body {
 
 .hourBlock > div {
     background: transparent;
+    margin: 10px;
+}
+
+#Hour1, #Hour2, #Hour3, #Hour4, #Hour5, #Hour6, #Hour7, #Hour8, #Hour9, #Hour10, #Hour11, #Hour12, #Hour13,
+#Hour14, #Hour15, #Hour16, #Hour17, #Hour18, #Hour19, #Hour20, #Hour21, #Hour22, #Hour23 {
+    padding-top: 10px;
+}
+
+#day1Date, #day2Date, #day3Date, #day4Date, #day5Date, #day6Date, #day7Date {
+    padding-top: 10px;
 }
 
 #weatherDetails > div, img {
     background: transparent;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13, #img14, #img15,
+#img16, #img17, #img18, #img19, #img20, #img21, #img22, #img23 {
+    height: 25%;
+    width: 25%;
 }
 
 #location {
