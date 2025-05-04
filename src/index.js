@@ -2,13 +2,14 @@ import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
     wind, currentDayIcon, days, hours, searchDisplay, searchBar,
-    searchBtn
+    searchBtn, displayLoading, hideLoading
  } from "./elementSelect";
 import { getTempData } from "./graph";
 
 
 // Calls Visual Crossing API
 function getWeather(location) {
+    displayLoading(); // Display loading message whilst data is served
     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=uk&include=days%2Chours&key=WE5SWL7PXQVWZVJPQW6JNH35P&contentType=json`, {
             "method": "GET",
             "mode": "cors",
@@ -21,6 +22,8 @@ function getWeather(location) {
         .then(function(response) {
             console.log(response);
 
+            // Hides loading page
+            hideLoading();
             // Hides initial page
             landingFormHide();
             // Display main page 
