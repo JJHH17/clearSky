@@ -149,7 +149,7 @@ html, body {
     grid-template-columns: 50% 50% ;
     grid-template-rows: 20% 20% 10% 10% 5%auto;
     background-color: rgba(0, 0, 0, 0.5);
-    margin:> 10px;
+    margin: 10px;
     color: white;
     border-radius: 25px;
     min-height: 200px; 
