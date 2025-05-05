@@ -14,10 +14,15 @@ export function expandDayForecast() {
 // Adds day elements to parent element
 export function daysAdded() {
     const parent = document.querySelector("#forecastExpand");
+
     const array = Array.from({ length: 7 }, (_, i) => document.querySelector(`#d${i + 1}`));
     
+    // Creating a clone of the divs so we can easily revert back to default view
     array.forEach(day => {
-        if (day) parent.appendChild(day);
+        if (day) {
+            const clone = day.cloneNode(true);
+            parent.appendChild(clone);
+        }
     })
 
 }

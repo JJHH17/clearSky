@@ -2,7 +2,7 @@ import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
     wind, currentDayIcon, days, hours, searchDisplay, searchBar,
-    searchBtn, displayLoading, hideLoading, dailyForecast
+    searchBtn, displayLoading, hideLoading, dailyForecast, 
  } from "./elementSelect";
 import { getTempData } from "./graph";
 import { daysAdded, expandDayForecast } from "./dayExpand";
