@@ -5,7 +5,6 @@ import { landingButton, landingInput, landingFormHide, mainPageShow,
     searchBtn, displayLoading, hideLoading, dailyForecast, 
  } from "./elementSelect";
 import { getTempData } from "./graph";
-import { daysAdded, expandDayForecast, hideElements } from "./dayExpand";
 
 
 // Calls Visual Crossing API
