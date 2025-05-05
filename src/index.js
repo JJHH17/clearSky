@@ -85,12 +85,3 @@ searchBtn().addEventListener("click", () => {
     const search = searchBar();
     getWeather(search.value);
 })
-
-// Seven day forecast can be clicked, expands forecast on page
-dailyForecast().addEventListener("click", () => {
-    expandDayForecast();
-    daysAdded();
-    // Hide previous elements
-    hideElements();
-    
-})
