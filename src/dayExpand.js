@@ -24,5 +24,23 @@ export function daysAdded() {
             parent.appendChild(clone);
         }
     })
-
 }
+
+// Hides other elements on page
+export function hideElements() {
+    const days = document.querySelector("#dayHolder");
+    const weatherDetails = document.querySelector("#weatherDetails");
+    const hourlyForecast = document.querySelector("#hourlyForecast");
+    const tempGraph = document.querySelector("#tempGraph");
+    const mainPage = document.querySelector("#mainPage");
+    
+    days.style.display = "none";
+    weatherDetails.style.display = "none";
+    hourlyForecast.style.display = "none";
+    tempGraph.style.display = "none";
+
+    // Reverts main page styling to block
+    mainPage.style.display = "block";
+}
+
+// Displays other elements on page when modal is closed

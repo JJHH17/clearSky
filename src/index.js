@@ -5,7 +5,7 @@ import { landingButton, landingInput, landingFormHide, mainPageShow,
     searchBtn, displayLoading, hideLoading, dailyForecast, 
  } from "./elementSelect";
 import { getTempData } from "./graph";
-import { daysAdded, expandDayForecast } from "./dayExpand";
+import { daysAdded, expandDayForecast, hideElements } from "./dayExpand";
 
 
 // Calls Visual Crossing API
@@ -90,4 +90,7 @@ searchBtn().addEventListener("click", () => {
 dailyForecast().addEventListener("click", () => {
     expandDayForecast();
     daysAdded();
+    // Hide previous elements
+    hideElements();
+
 })
