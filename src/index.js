@@ -92,5 +92,5 @@ dailyForecast().addEventListener("click", () => {
     daysAdded();
     // Hide previous elements
     hideElements();
-
+    
 })
