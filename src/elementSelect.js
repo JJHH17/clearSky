@@ -27,6 +27,11 @@ export function mainPageShow() {
     mainPage.style.display = "grid";
 }
 
+export function mainPageSelector() {
+    const mainPage = document.querySelector("#mainPage");
+    return mainPage;
+}
+
 // Used to display location through API
 export function displayLocation(location) {
     const locationDiv = document.querySelector("#location");
@@ -67,6 +72,11 @@ export function wind(wind) {
 export function currentDayIcon(todaysIcon) {
     const icon = document.querySelector("#icon");
     icon.src = icons(`./${todaysIcon}.png`);
+}
+
+export function dailyForecast() {
+    const dailyWeather = document.querySelector("#dayHolder");
+    return dailyWeather;
 }
 
 // List of days 

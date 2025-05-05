@@ -2,9 +2,10 @@ import "./styles.css";
 import { landingButton, landingInput, landingFormHide, mainPageShow,
     displayLocation, displayTemp, displayDesc, tempFeel, humidity,
     wind, currentDayIcon, days, hours, searchDisplay, searchBar,
-    searchBtn, displayLoading, hideLoading
+    searchBtn, displayLoading, hideLoading, dailyForecast
  } from "./elementSelect";
 import { getTempData } from "./graph";
+import { daysAdded, expandDayForecast } from "./dayExpand";
 
 
 // Calls Visual Crossing API
@@ -83,4 +84,10 @@ landingButton().addEventListener("click", () => {
 searchBtn().addEventListener("click", () => {
     const search = searchBar();
     getWeather(search.value);
+})
+
+// Seven day forecast can be clicked, expands forecast on page
+dailyForecast().addEventListener("click", () => {
+    expandDayForecast();
+    daysAdded();
 })
