@@ -24,6 +24,13 @@ export function daysAdded() {
             parent.appendChild(clone);
         }
     })
+
+    // Button that closes modal when clicked
+    const closeBtn = document.createElement("button");
+    closeBtn.id = "closeDaysAdded";
+    closeBtn.type = "button";
+    closeBtn.innerText = "Close";
+    mainPageSelector().appendChild(closeBtn);
 }
 
 // Hides other elements on page
